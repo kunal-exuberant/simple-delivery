@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:id="@+id/rlVeg"
+        >
+    <ImageView
+        android:id="@+id/ivVegItem"
+        android:src="@drawable/vegetables"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/tvVegItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/ivVegItem"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvVegPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#888888"
+        android:layout_below="@+id/tvVegItem"
+        android:layout_toRightOf="@+id/ivVegItem"
+        android:text="Rs 10/kg"
+        android:tag="10"
+        android:textStyle="italic"
+        android:textSize="12dp"
+        />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/llQty"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@+id/llQtyTotal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnQtyDesc"
+            android:layout_width="24dp"
+            android:layout_height="28dp"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/primary_text_dark_nodisable"
+            android:text="-" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvVegQty"
+            android:background="#eeeeee"
+            android:padding="10dp"
+            android:hint="Kg"
+            android:text="0"
+            />
+
+        <Button
+            android:id="@+id/btnQtyInc"
+            android:layout_width="24dp"
+            android:layout_height="28dp"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/primary_text_dark_nodisable"
+            android:text="+" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llQtyTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvVegTotal"
+            android:background="#eeeeee"
+            android:paddingTop="10dp"
+            android:hint="Kg"
+            android:text="0.0"
+            android:textColor="#DD835E"
+            android:textStyle="italic"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

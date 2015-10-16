@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@android:color/background_dark"
+        android:layout_alignParentTop="true"
+        android:layout_weight="5"
+        android:weightSum="100"
+        android:id="@+id/llTitle"
+        >
+        <ImageView
+            android:id="@+id/ivVegItem"
+            android:src="@drawable/vegetables"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="5"
+            />
+        <TextView
+            android:id="@+id/tvPickVeg"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:textSize="18dp"
+            android:layout_weight="80"
+            android:textColor="@android:color/primary_text_dark_nodisable"
+            android:text="Enter Drop Address" />
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_weight="15"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/holo_green_dark"
+            android:textColor="@android:color/primary_text_dark_nodisable"
+            android:text="Submit" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_below="@+id/llTitle"
+        android:layout_width="match_parent"
+        android:layout_weight="90"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@android:color/background_dark"
+        android:layout_below="@+id/llTitle"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:id="@+id/llAddress">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/etMobile"
+        android:layout_alignParentTop="true"
+        android:background="#eeeeee"
+        android:layout_marginTop="1dp"
+        android:padding="10dp"
+        android:hint="Mobile"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etMobile"
+        android:id="@+id/etName"
+        android:background="#eeeeee"
+        android:layout_marginTop="1dp"
+        android:padding="10dp"
+        android:hint="Name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/etName"
+        android:id="@+id/etEmail"
+        android:background="#eeeeee"
+        android:layout_marginTop="1dp"
+        android:padding="10dp"
+        android:hint="Email"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/etEmail"
+        android:id="@+id/etAddress"
+        android:background="#eeeeee"
+        android:layout_marginTop="1dp"
+        android:padding="10dp"
+        android:minLines="6"
+        android:gravity="top"
+        android:maxLines="10"
+        android:hint="Address"
+        />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/etAddress"
+            android:id="@+id/etCity"
+            android:background="#eeeeee"
+            android:layout_marginTop="1dp"
+            android:padding="10dp"
+            android:hint="Address"
+            android:focusable="false"
+            android:text="Bangalore"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="5"
+        android:id="@+id/btnSubmitAddress"
+        android:background="@android:color/holo_green_dark"
+        android:textColor="@android:color/primary_text_dark_nodisable"
+        android:layout_marginTop="1dp"
+        android:padding="10dp"
+        android:text="Submit Address"
+        />
+</RelativeLayout>
