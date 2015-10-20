@@ -16,8 +16,8 @@ public class PickVegetables extends Activity implements OnClickListener{
     private ListView lvVegList;
     private TextView tvVegItem, tvTotalPrice;
     private Button btnOrder, btnOrderPlace;
-    public static String[] vegList = {"Onion", "Potato", "Tomato", "Capcicum", "Cabbage", "Cauli Flower", "Bitter gourd", "Lady Finger", "Bottle gourd", "Spinach"};
-    public static Integer[] imgid = { R.drawable.onion, R.drawable.potato, R.drawable.tomato, R.drawable.capcicum, R.drawable.cabbage, R.drawable.cauli_flower, R.drawable.bitter_gourd, R.drawable.lady_finger, R.drawable.bottle_gourd, R.drawable.spinach};
+    public static String[] vegList = {"Onion", "Potato", "Tomato", "Capcicum", "Cabbage", "Bitter gourd", "Lady Finger", "Bottle gourd", "Spinach", "Cauli Flower"};
+    public static Integer[] imgid = { R.drawable.onion, R.drawable.potato, R.drawable.tomato, R.drawable.capcicum, R.drawable.cabbage, R.drawable.bitter_gourd, R.drawable.lady_finger, R.drawable.bottle_gourd, R.drawable.spinach, R.drawable.cauli_flower};
     public static Integer[] vegQty =   {0,  0,  0,  0,  0,  0,  0,  0,  0,  0};
     public static Integer[] vegPrice = {20, 30, 40, 10, 30, 21, 26, 8, 53, 10};
     public static Double[] vegItemSum = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
